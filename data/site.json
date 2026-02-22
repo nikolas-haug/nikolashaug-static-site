@@ -1,0 +1,22 @@
+{
+  "siteUrl": "https://nikolashaug.com",
+  "siteTitle": "Nikolas Haug",
+  "siteTagline": "writer & creator of things",
+  "siteDescription": "Nikolas Haug is a writer of speculative fiction and sci-fi fantasy. He writes stories about strange worlds with characters inspired from this one.",
+  "metaKeywords": "Nikolas Haug, speculative fiction, sci-fi fantasy, writer, author, short stories, blog, worldbuilding",
+  "googleVerification": "",
+  "nav": [
+    { "url": "", "label": "Home" },
+    { "url": "fiction/", "label": "Fiction" },
+    { "url": "blog/", "label": "Blog" },
+    { "url": "about/", "label": "About" },
+    { "url": "contact/", "label": "Contact" }
+  ],
+  "footerNav": [
+    { "url": "fiction/", "label": "Fiction" },
+    { "url": "blog/", "label": "Blog" },
+    { "url": "contact/", "label": "Contact" }
+  ],
+  "socialLinks": [],
+  "siteBackgroundImage": "images/mountain-bg.png"
+}

@@ -1,0 +1,244 @@
+/**
+*
+* LAYOUT — Nikolas Haug site structure + grid system
+*
+*/
+
+@use "sass:math";
+@use "variables" as *;
+@use "mixins" as *;
+
+// =====================================================
+// SITE HEADER
+// =====================================================
+
+.site-header {
+    position: relative;
+    padding: 1.5rem 1rem;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0) 100%);
+    text-align: center;
+    z-index: 2;
+}
+
+.site-logo-wrapper {
+    color: $color-white;
+    font-size: 3rem;
+    font-family: $font-family-heading;
+    letter-spacing: 0.1em;
+    line-height: 1;
+    margin-bottom: 0.5rem;
+    text-shadow: 0 2px 12px rgba(20, 40, 80, 0.45), 0 1px 2px rgba(0, 0, 0, 0.25);
+}
+
+.site-title-link {
+    color: inherit;
+    text-decoration: none;
+    transition: text-shadow 0.3s, color 0.3s;
+
+    &:hover,
+    &:focus {
+        color: $color-white;
+        text-shadow: 0 0 12px #bfc9d1, 0 0 24px #3a6ea8, 0 2px 12px rgba(20, 40, 80, 0.45);
+        text-decoration: none;
+    }
+}
+
+.tagline {
+    font-family: $font-family-primary;
+    font-size: 1.15rem;
+    color: $font-color-secondary;
+    margin-bottom: 0.5rem;
+    text-shadow: 0 2px 12px rgba(20, 40, 80, 0.45), 0 1px 2px rgba(0, 0, 0, 0.25);
+}
+
+// =====================================================
+// MAIN CONTENT AREA
+// =====================================================
+
+.site-main {
+    background: $color-bg;
+    max-width: 700px;
+    margin: 0 auto;
+    box-shadow: 0 4px 32px 0 rgba(0, 0, 0, 0.18);
+    padding: 2.5rem 2rem 2rem;
+    position: relative;
+    z-index: 1;
+
+    @media (max-width: 785px) {
+        padding: 2.5rem 1rem 2rem;
+    }
+}
+
+// Hero image inside page
+.hero-image {
+    margin-bottom: 2rem;
+
+    img {
+        width: 100%;
+        height: auto;
+        display: block;
+        border-radius: $border-radius;
+    }
+}
+
+// =====================================================
+// SITE FOOTER
+// =====================================================
+
+.site-footer {
+    position: relative;
+    background: $color-bg;
+    color: $font-color-secondary;
+    text-align: center;
+    padding: 1rem;
+    max-width: 700px;
+    margin: 0 auto 4rem;
+    font-size: 0.95rem;
+    border-top: 1px solid $color-heading;
+    z-index: 1;
+
+    p {
+        margin: 0;
+    }
+
+    @media (max-width: 785px) {
+        margin-bottom: 0;
+    }
+}
+
+.footer-social {
+    margin-bottom: 0.5rem;
+}
+
+.footer-nav {
+    margin-bottom: 0.5rem;
+    padding-top: 0.75rem;
+
+    ul {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 0.25rem 1rem;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    a {
+        color: $color-link;
+        text-decoration: none;
+        transition: color 0.2s;
+
+        &:hover {
+            color: $color-link-hover;
+            text-decoration: none;
+        }
+    }
+}
+
+// =====================================================
+// GRID CONTAINERS (from bathtubcig)
+// =====================================================
+
+.container {
+    @include container-styles
+}
+
+.container-full {
+    @include container-styles
+}
+
+.container-stretch {
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: .5rem;
+    padding-left: .5rem;
+}
+
+.container-sm {
+    @include container-size($x-small, $container-gutter);
+    @include container-styles
+}
+
+.container-med {
+    @include container-size($small, $container-gutter);
+    @include container-styles
+}
+
+.container-lg {
+    @include container-size($medium, $container-gutter);
+    @include container-styles
+}
+
+@include x-small-breakpoint {
+    .container {
+        @include container-size($x-small, $container-gutter);
+    }
+}
+
+@include small-breakpoint {
+    .container {
+        @include container-size($small, $container-gutter);
+    }
+}
+
+@include medium-breakpoint {
+    .container {
+        @include container-size($medium, $container-gutter);
+    }
+}
+
+@include large-breakpoint {
+    .container {
+        @include container-size($large, $container-gutter);
+    }
+}
+
+// ROWS
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -0.5rem;
+    margin-left: -0.5rem;
+}
+
+[class^="col-"] {
+    padding-right: $grid-column-padding;
+    padding-left: $grid-column-padding;
+}
+
+.no-gutters {
+    margin-right: 0;
+    margin-left: 0;
+}
+
+.no-gutters > .col,
+.no-gutters > [class*="col-"] {
+    padding-right: 0;
+    padding-left: 0;
+}
+
+.col-auto {
+    flex-grow: 1;
+    flex-basis: 0;
+    max-width: 100%;
+}
+
+.col {
+    flex-grow: 1;
+    flex-basis: auto;
+    max-width: 100%;
+    padding-right: $grid-column-padding;
+    padding-left: $grid-column-padding;
+}
+
+@for $i from 1 through $grid-columns {
+    .col-#{$i} {
+        flex-basis: math.percentage(math.div($i, $grid-columns));
+        max-width: math.percentage(math.div($i, $grid-columns));
+    }
+    .col-offset-#{$i} {
+        margin-left: math.percentage(math.div($i, $grid-columns));
+    }
+}

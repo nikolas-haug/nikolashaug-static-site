@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+{{> head}}
+<body>
+    {{> header}}
+    {{> nav}}
+
+    <main class="site-main">
+        {{#heroImage}}
+        <div class="hero-image">
+            <img src="{{heroImage}}" alt="{{title}}" class="img-100">
+        </div>
+        {{/heroImage}}
+
+        <div class="page-content">
+            {{content}}
+        </div>
+    </main>
+
+    {{> footer}}
+</body>
+</html>

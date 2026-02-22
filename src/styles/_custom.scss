@@ -1,0 +1,200 @@
+/**
+*
+* CUSTOM — Theme-specific overrides and MailerLite integration
+*
+*/
+
+@use "variables" as *;
+
+// =====================================================
+// PAGE CONTENT (markdown body)
+// =====================================================
+
+.page-content {
+    line-height: $base-line-height;
+
+    > h1:first-child,
+    > h2:first-child {
+        margin-top: 0;
+    }
+
+    img {
+        border-radius: $border-radius;
+        margin: 1rem 0;
+    }
+}
+
+.blog-intro {
+    margin-bottom: 1.5rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid $color-border;
+}
+
+// =====================================================
+// CUSTOM IMAGE WRAPPER (portrait with overlay)
+// Usage: <div class="custom-image-wrapper">
+//            <img ...>
+//            <div class="custom-image-overlay"></div>
+//        </div>
+// =====================================================
+
+.custom-image-wrapper {
+    position: relative;
+    width: 320px;
+    height: 320px;
+    flex: 0 0 320px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border: 2px solid $color-border;
+        border-radius: 8px;
+        display: block;
+        z-index: 1;
+    }
+
+    @media (max-width: 900px) {
+        width: 100%;
+        max-width: 320px;
+        margin: 2rem auto 0;
+    }
+}
+
+.custom-image-overlay {
+    position: absolute;
+    inset: 0;
+    border-radius: 8px;
+    background: linear-gradient(135deg, rgba(60, 120, 200, 0.18) 0%, rgba(10, 25, 47, 0.45) 100%);
+    box-shadow: 0 4px 32px 0 rgba(10, 20, 40, 0.18);
+    z-index: 2;
+    pointer-events: none;
+}
+
+// =====================================================
+// MAILERLITE FORM OVERRIDES
+// Reader magnet form (#mlb2-27665313)
+// =====================================================
+
+#mlb2-27665313.ml-form-embedContainer {
+    .ml-form-embedWrapper {
+        .ml-form-embedBody {
+            .ml-form-embedContent h4 {
+                font-family: $font-family-heading !important;
+            }
+        }
+    }
+}
+
+// Subscribe / newsletter form (#mlb2-16763253)
+#mlb2-16763253.ml-form-embedContainer {
+    .ml-form-embedWrapper {
+        .ml-form-embedBody,
+        .ml-form-successBody {
+            padding: 0 !important;
+        }
+
+        &.embedForm {
+            background: $color-bg;
+
+            h4 {
+                font-family: $font-family-heading !important;
+            }
+
+            p {
+                color: $font-color-secondary !important;
+                font-family: $font-family-primary !important;
+            }
+
+            button {
+                background: $color-accent !important;
+            }
+
+            .ml-form-embedBody {
+                .ml-form-checkboxRow label p {
+                    color: $font-color-secondary !important;
+                }
+            }
+        }
+    }
+}
+
+// =====================================================
+// 404 ERROR PAGE
+// =====================================================
+
+.error-404 {
+    text-align: center;
+    padding: 2rem 0;
+}
+
+.error-number {
+    font-family: $font-family-heading;
+    font-size: 6rem;
+    color: $color-heading;
+    line-height: 1;
+    margin-bottom: 1rem;
+    text-shadow: 0 0 20px rgba(179, 209, 255, 0.3);
+}
+
+.error-content p {
+    font-size: 1.1rem;
+    color: $font-color-secondary;
+    margin-bottom: 2rem;
+}
+
+.error-actions {
+    margin: 2rem 0;
+}
+
+.btn-primary {
+    display: inline-block;
+    padding: 0.75rem 2rem;
+    background: $color-accent;
+    color: $color-white;
+    text-decoration: none;
+    border-radius: $border-radius;
+    font-size: 1rem;
+    transition: background-color 0.2s;
+
+    &:hover {
+        background: $color-accent-hover;
+        color: $color-white;
+        text-decoration: none;
+    }
+}
+
+// =====================================================
+// MISC UTILITY
+// =====================================================
+
+// Ensure all site content sits above body::after gradient
+.site-header,
+.main-nav,
+.site-main,
+.site-footer {
+    position: relative;
+    z-index: 1;
+}
+
+.site-header {
+    z-index: 2;
+}
+
+.main-nav {
+    z-index: 1200;
+}
+
+// Responsive flex layout helper (e.g. text + image side-by-side)
+.flex-pair {
+    display: flex;
+    gap: 2rem;
+    align-items: flex-start;
+
+    @media (max-width: 600px) {
+        flex-direction: column;
+    }
+}

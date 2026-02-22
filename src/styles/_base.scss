@@ -1,0 +1,150 @@
+/**
+*
+* BASE HTML — Nikolas Haug dark theme
+*
+*/
+
+@use "variables" as *;
+@use "mixins" as *;
+
+html {
+    font-size: $base-font-size;
+    font-family: $font-family-primary;
+    color: $font-color-primary;
+}
+
+body {
+    line-height: $base-line-height;
+    background-color: $global-background-color;
+    font-size: $font-size-primary;
+    min-height: 100vh;
+    position: relative;
+    letter-spacing: $letter-spacing-content;
+}
+
+// Fixed gradient overlay — sits above background, below content
+body::after {
+    content: '';
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    background: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0) 0%,
+        rgba(10, 24, 56, 0.92) 70%,
+        rgba(10, 24, 56, 1) 100%
+    );
+    z-index: 0;
+}
+
+p,
+ol,
+ul,
+dl,
+table {
+    margin: 0 0 $typography-margins 0;
+    letter-spacing: $letter-spacing-content;
+}
+
+// Headings use New Rocker serif
+h1, h2, h3, h4, h5, h6 {
+    margin: $typography-margins 0;
+    font-weight: $heading-font-weight;
+    font-family: $heading-font-family-primary;
+    line-height: $heading-line-height;
+    letter-spacing: $letter-spacing-heading;
+    color: $heading-font-color-primary;
+
+    a:link,
+    a:visited {
+        color: $heading-font-color-primary;
+    }
+}
+
+// Mobile heading sizes
+h1 { font-size: $h1-small; }
+h2 { font-size: $h2-small; }
+h3 { font-size: $h3-small; }
+h4 { font-size: $h4-small; }
+h5 { font-size: $h5-small; }
+
+// Desktop heading sizes
+@include small-breakpoint {
+    h1 { font-size: $h1-primary; }
+    h2 { font-size: $h2-primary; }
+    h3 { font-size: $h3-primary; }
+    h4 { font-size: $h4-primary; }
+    h5 { font-size: $h5-primary; }
+}
+
+// Links
+a {
+    color: $color-link;
+    text-decoration: none;
+    transition: color 0.2s;
+
+    &:hover,
+    &:active,
+    &:focus {
+        color: $color-link-hover;
+        text-decoration: underline;
+    }
+}
+
+// Blockquotes use Philosopher serif
+blockquote {
+    background: $blockquote-background-color;
+    margin: 0 0 $typography-margins 0;
+    border-left: 4px solid $blockquote-border-color;
+    padding: 0.75rem 1.5rem;
+    font-size: $blockquote-font-size;
+    font-family: $font-family-serif;
+    color: $font-color-secondary;
+
+    cite {
+        display: block;
+        margin-top: $typography-margins;
+        font-size: 0.9rem;
+    }
+}
+
+// Images
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+iframe {
+    width: 100% !important;
+    margin: 0 0 $typography-margins 0;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid $color-border;
+    margin: 2rem 0;
+}
+
+// Code
+code,
+pre {
+    font-family: $font-family-mono;
+    background: rgba(0, 0, 0, 0.25);
+    border-radius: 4px;
+}
+
+code {
+    padding: 0.1em 0.4em;
+    font-size: 0.9em;
+}
+
+pre {
+    padding: 1rem;
+    overflow-x: auto;
+    margin: 0 0 $typography-margins 0;
+
+    code {
+        background: none;
+        padding: 0;
+    }
+}

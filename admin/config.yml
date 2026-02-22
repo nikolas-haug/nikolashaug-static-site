@@ -1,0 +1,48 @@
+backend:
+  name: github
+  repo: nikolas-haug/nikolashaug-static-site  # Update to match your GitHub repo
+  branch: master
+
+local_backend: false
+
+media_folder: "assets/images"    # Where uploaded images will be stored
+public_folder: "/images"          # Public URL path for uploaded images
+
+collections:
+
+  # ── Static pages ──────────────────────────────────────────────────────────
+  - name: "pages"
+    label: "Pages"
+    folder: "content/pages"
+    create: false   # Don't allow creating new pages via CMS
+    slug: "{{slug}}"
+    fields:
+      - {label: "Title",            name: "title",           widget: "string"}
+      - {label: "Layout",           name: "layout",          widget: "hidden", default: "page"}
+      - {label: "Permalink",        name: "permalink",       widget: "string",   required: false}
+      - {label: "Hero Image",       name: "heroImage",       widget: "image",    required: false}
+      - {label: "Meta Title",       name: "metaTitle",       widget: "string",   required: false}
+      - {label: "Meta Description", name: "metaDescription", widget: "text",     required: false}
+      - {label: "Meta Keywords",    name: "metaKeywords",    widget: "string",   required: false}
+      - {label: "OG Title",         name: "ogTitle",         widget: "string",   required: false}
+      - {label: "OG Description",   name: "ogDescription",   widget: "text",     required: false}
+      - {label: "OG Image",         name: "ogImage",         widget: "string",   required: false}
+      - {label: "Schema Type",      name: "schemaType",      widget: "string",   required: false}
+      - {label: "Body",             name: "body",            widget: "markdown",  required: false}
+
+  # ── Blog posts ─────────────────────────────────────────────────────────────
+  - name: "posts"
+    label: "Blog Posts"
+    folder: "content/posts"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Title",            name: "title",           widget: "string"}
+      - {label: "Date",             name: "date",            widget: "datetime", format: "YYYY-MM-DD", date_format: "YYYY-MM-DD", time_format: false}
+      - {label: "Slug",             name: "slug",            widget: "string",   hint: "URL-friendly name, e.g. mapping-whale-song"}
+      - {label: "Excerpt",          name: "excerpt",         widget: "text",     required: false, hint: "Short summary shown in the blog listing (1–2 sentences)"}
+      - {label: "Hero Image",       name: "heroImage",       widget: "image",    required: false}
+      - {label: "Meta Description", name: "metaDescription", widget: "text",     required: false}
+      - {label: "OG Image",         name: "ogImage",         widget: "string",   required: false}
+      - {label: "Schema Type",      name: "schemaType",      widget: "hidden",   default: "Article"}
+      - {label: "Body",             name: "body",            widget: "markdown"}

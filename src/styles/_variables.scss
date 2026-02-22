@@ -1,0 +1,158 @@
+/**
+*
+* VARIABLES — Nikolas Haug theme
+*
+*/
+
+@use "sass:color";
+
+//=====================================================
+// CONTAINERS
+//=====================================================
+
+$x-small: 480px;
+$small: 850px;
+$medium: 992px;
+$large: 1200px;
+
+$container-gutter: 0.95;
+
+//=====================================================
+// GRID
+//=====================================================
+
+$grid-columns: 12;
+$grid-column-padding: 1.5rem;
+$row-gallery-height: 30rem;
+
+//=====================================================
+// TYPOGRAPHY
+//=====================================================
+
+$base-font-size: 100%;
+$base-line-height: 1.8;
+
+$font-family-primary:  'Libre Franklin', sans-serif;
+$font-family-heading:  'New Rocker', serif;
+$font-family-serif:    'Philosopher', serif;
+$font-family-mono:     'Space Mono', monospace;
+
+$font-color-primary:   #e0e6ed;
+$font-color-secondary: #bfc9d1;
+$font-size-primary:    1rem;
+
+// Headings
+$heading-font-family-primary: 'New Rocker', serif;
+$heading-font-color-primary:  #b3d1ff;
+$heading-font-weight:         400;
+$heading-line-height:         1.2;
+
+// Small headings (mobile)
+$h1-small: 2.2rem;
+$h2-small: 1.8rem;
+$h3-small: 1.5rem;
+$h4-small: 1.3rem;
+$h5-small: 1.1rem;
+
+// Primary headings (desktop)
+$h1-primary: 2.8rem;
+$h2-primary: 2.2rem;
+$h3-primary: 1.8rem;
+$h4-primary: 1.5rem;
+$h5-primary: 1.3rem;
+
+$typography-margins:      1.2rem;
+$blockquote-font-size:    1.05rem;
+$blockquote-border-color: #b3d1ff;
+$blockquote-background-color: transparent;
+
+$letter-spacing-content: 0.1px;
+$letter-spacing-heading: 1px;
+
+//=====================================================
+// COLOR
+//=====================================================
+
+$global-background-color: #232b3a;
+$color-bg:          #232b3a;
+$color-deep:        #0a1838;
+$color-text:        #e0e6ed;
+$color-text-muted:  #bfc9d1;
+$color-heading:     #b3d1ff;
+$color-border:      #2e3a4d;
+$color-link:        #4fc3f7;
+$color-link-hover:  #e0e6ed;
+$color-accent:      #6000cd;
+$color-accent-hover:#7a1fd8;
+$color-white:       #fff;
+$color-black:       #000;
+
+//=====================================================
+// SPACING
+//=====================================================
+
+$margin-utility:  1rem;
+$padding-utility: 1rem;
+
+//=====================================================
+// BORDERS
+//=====================================================
+
+$border-width:  1px;
+$border-style:  solid;
+$border-color:  #2e3a4d;
+$border-radius: 6px;
+$borders:       $border-width $border-style $border-color;
+
+//=====================================================
+// NAVIGATION
+//=====================================================
+
+$navbar-padding:               0.5rem 1rem;
+$mobile-navbar-background-color: rgba(20, 28, 38, 1);
+$navbar-link-color-hover:      $color-link-hover;
+
+//=====================================================
+// FORMS
+//=====================================================
+
+$buttons: (".button, a.button, button, [type=submit], [type=reset], [type=button]");
+
+$forms: (
+  "[type=color], [type=date], [type=datetime], [type=datetime-local], [type=email], [type=month], [type=number], [type=password], [type=search], [type=tel], [type=text], [type=url], [type=week], [type=time], select, textarea"
+);
+
+$input-background:  #1a1f2a;
+$placeholder:       $color-text-muted;
+$form-border:       1px solid $color-border;
+$form-border-hover: 1px solid color.adjust($color-border, $lightness: 10%);
+$form-border-focus: 1px solid $color-link;
+
+//=====================================================
+// BUTTONS
+//=====================================================
+
+$button-background-color: $color-accent;
+$button-background-hover: $color-accent-hover;
+$button-color:            #fff;
+$button-font-weight:      600;
+$button-font-family:      $font-family-primary;
+$button-font-size:        1rem;
+$button-border-width:     1px;
+$button-border-style:     solid;
+$button-border-color:     $color-accent;
+$button-border-radius:    $border-radius;
+$button-text-transform:   none;
+
+$accent-button-background-color: $color-link;
+$accent-button-color:            #fff;
+$accent-button-color-hover:      color.adjust($color-link, $lightness: 10%);
+
+$muted-border:            1px solid $color-text-muted;
+$muted-border-hover:      1px solid $color-link;
+$muted-background:        transparent;
+$muted-background-hover:  transparent;
+$muted-color:             $color-text-muted;
+$muted-color-hover:       $color-link;
+
+$round-buttons: 40px;
