@@ -2,7 +2,6 @@
 title: Home
 layout: page
 permalink: /
-heroImage: images/whale-breach.png
 metaTitle: Nikolas Haug | Writer & Creator
 metaDescription: Nikolas Haug is a writer of speculative fiction and sci-fi fantasy. Explore his work, read his blog, and sign up for his monthly newsletter.
 metaKeywords: Nikolas Haug, speculative fiction, sci-fi fantasy, writer, author, short stories, newsletter, worldbuilding
