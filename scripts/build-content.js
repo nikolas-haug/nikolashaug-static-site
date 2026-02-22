@@ -328,6 +328,7 @@ function buildPosts(siteData, generateNavHTML, generateFooterNavHTML, socialIcon
       content: post.content,
       heroImage,
       backgroundImage,
+      bodyClass: `single-post single-${slug}`,
       baseUrl,
       ...seoMeta
     });
@@ -398,6 +399,7 @@ function buildBlogListing(posts, siteData, generateNavHTML, generateFooterNavHTM
       ? `${baseUrl}${blogPage.frontmatter.heroImage.replace(/^\//, '')}`
       : '',
     backgroundImage,
+    bodyClass: 'page-blog',
     baseUrl,
     ...seoMeta
   });
@@ -462,6 +464,8 @@ function buildAll() {
       ? `${config.baseUrl}${siteData.siteBackgroundImage}`
       : '';
 
+    const bodyClass = slug === 'index' ? 'home' : `page-${slug}`;
+
     const html = generateHTML(template, {
       siteTitle: siteData.siteTitle,
       siteTagline: siteData.siteTagline,
@@ -478,6 +482,7 @@ function buildAll() {
         ? `${config.baseUrl}${pageMd.frontmatter.heroImage.replace(/^\//, '')}`
         : '',
       backgroundImage,
+      bodyClass,
       baseUrl: config.baseUrl,
       ...seoMeta,
       ...customData

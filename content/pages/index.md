@@ -10,9 +10,9 @@ schemaType: Person
 
 # Welcome to my digital landscape.
 
-Explore my work here or get a copy of my short story *The Singing Rock* by clicking the link below.
+Explore my work here or get a copy of my short story The Singing Rock by clicking the link below.
 
-[Get my short story](#)
+<div class="text-center"><a href="#" class="button">Get my short story</a></div>
 
 I write a monthly newsletter (sometimes more frequently) that collects and collates my ideas about writing and other creative projects. The content often includes speculative fiction and sci-fi fantasy stories, ideas about writing craft and creative process, and even deep dives into worldbuilding and table top gaming. If you enjoy these things, please sign up or read samplings from past entries below.
 
