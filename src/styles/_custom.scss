@@ -31,6 +31,16 @@
 }
 
 // =====================================================
+// Custom page styles
+// =====================================================
+
+body.home {
+    .page-content h1 {
+        text-align: center;
+    }
+}
+
+// =====================================================
 // CUSTOM IMAGE WRAPPER (portrait with overlay)
 // Usage: <div class="custom-image-wrapper">
 //            <img ...>

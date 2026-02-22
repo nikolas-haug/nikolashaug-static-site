@@ -18,6 +18,8 @@ I write a monthly newsletter (sometimes more frequently) that collects and colla
 
 [More from my Newsletter](#)
 
+<div class="text-center"><a href="/blog" class="button">More from my newsletter</a></div>
+
 I'm currently hard at work trying to finish a novel about whales and a protagonist who tries to talk to them using advanced DIY technology. Look for notes and updates about that on the pages here, or sign up for my newsletter to get more detailed glimpses behind the curtain.
 
 ![Humpback whale breaching in the pacific ocean](images/whale-breach.png)
