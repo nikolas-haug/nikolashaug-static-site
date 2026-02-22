@@ -68,6 +68,15 @@ const PAGE_CONFIGS = {
     sitemapUrl: '/contact/',
     sitemapPriority: '0.6',
     sitemapChangefreq: 'yearly'
+  },
+
+  404: {
+    template: 'page',
+    outputPath: '404.html',
+    baseUrl: './',
+    sitemapUrl: null,
+    sitemapPriority: null,
+    sitemapChangefreq: null
   }
 
 };
@@ -491,11 +500,13 @@ function buildAll() {
     fs.writeFileSync(path.join(BUILD_DIR, config.outputPath), html);
     console.log(`- Built: ${config.outputPath}`);
 
-    sitemapPages.push({
-      url: config.sitemapUrl,
-      priority: config.sitemapPriority,
-      changefreq: config.sitemapChangefreq
-    });
+    if (config.sitemapUrl) {
+      sitemapPages.push({
+        url: config.sitemapUrl,
+        priority: config.sitemapPriority,
+        changefreq: config.sitemapChangefreq
+      });
+    }
   }
 
   // Build blog posts
