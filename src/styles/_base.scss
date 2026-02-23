@@ -114,6 +114,23 @@ img {
     height: auto;
 }
 
+figure {
+    margin: $typography-margins 0;
+
+    img {
+        display: block;
+        width: 100%;
+    }
+
+    figcaption {
+        font-size: 0.85rem;
+        color: $color-text-muted;
+        text-align: center;
+        margin-top: 0.5rem;
+        font-style: italic;
+    }
+}
+
 iframe {
     width: 100% !important;
     margin: 0 0 $typography-margins 0;

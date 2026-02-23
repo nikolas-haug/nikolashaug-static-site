@@ -150,11 +150,20 @@ function readData(dataName) {
   return null;
 }
 
+// Custom marked renderer: wrap images with a title in <figure>/<figcaption>
+const renderer = new marked.Renderer();
+renderer.image = (href, title, text) => {
+  if (title) {
+    return `<figure><img src="${href}" alt="${text}"><figcaption>${title}</figcaption></figure>`;
+  }
+  return `<img src="${href}" alt="${text}">`;
+};
+
 // Process markdown file
 function processMarkdown(filePath) {
   const content = fs.readFileSync(filePath, 'utf8');
   const parsed = matter(content);
-  const html = marked(parsed.body);
+  const html = marked(parsed.body, { renderer });
 
   return {
     frontmatter: parsed.attributes,

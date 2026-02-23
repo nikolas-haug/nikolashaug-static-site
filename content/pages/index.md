@@ -10,19 +10,17 @@ schemaType: Person
 
 # Welcome to my digital landscape.
 
-Explore my work here or get a copy of my short story The Singing Rock by clicking the link below.
+<p class="text-center">Explore my work here or get a copy of my short story The Singing Rock by clicking the link below.</p>
 
-<div class="text-center"><a href="#" class="button">Get my short story</a></div>
+<div class="text-center"><button class="ml-onclick-form" onclick="ml('show', 'vMP8qa', true)">Get my short story</button></div>
 
 I write a monthly newsletter (sometimes more frequently) that collects and collates my ideas about writing and other creative projects. The content often includes speculative fiction and sci-fi fantasy stories, ideas about writing craft and creative process, and even deep dives into worldbuilding and table top gaming. If you enjoy these things, please sign up or read samplings from past entries below.
-
-[More from my Newsletter](#)
 
 <div class="text-center"><a href="blog" class="button">More from my newsletter</a></div>
 
 I'm currently hard at work trying to finish a novel about whales and a protagonist who tries to talk to them using advanced DIY technology. Look for notes and updates about that on the pages here, or sign up for my newsletter to get more detailed glimpses behind the curtain.
 
-![Humpback whale breaching in the pacific ocean](images/whale-breach.png)
+![Humpback whale breaching in the pacific ocean](images/whale-breach.png "A humpback whale breaches off the Pacific coast.")
 
 If you don't know me already, let me introduce myself. I'm Nikolas, a writer of fiction and creator in other spheres. I write stories about strange worlds with characters inspired from this one. Most of my stories fall into the sci-fi fantasy or speculative realm. You can read more about me and my inspirations at the link below.
 

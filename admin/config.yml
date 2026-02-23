@@ -1,6 +1,6 @@
 backend:
   name: github
-  repo: nikolas-haug/nikolashaug-static-site  # Update to match your GitHub repo
+  repo: nikolas-haug/nikolashaug-static-site
   branch: master
 
 local_backend: false
