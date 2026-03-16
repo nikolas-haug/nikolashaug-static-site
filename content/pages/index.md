@@ -24,10 +24,12 @@ I'm currently hard at work trying to finish a novel about whales and a protagoni
 
 If you don't know me already, let me introduce myself. I'm Nikolas, a writer of fiction and creator in other spheres. I write stories about strange worlds with characters inspired from this one. Most of my stories fall into the sci-fi fantasy or speculative realm. You can read more about me and my inspirations at the link below.
 
-[More about me](about/)
+<div class="text-center"><a href="about" class="button">More About Me</a></div>
 
 For a small sampling of my newsletter/blog content, here are two links to previous posts:
 
-[Mapping whale song with machines](mapping-whale-song/) — *What does whale song look like when we transcribe it like sheet music?*
+[Mapping whale song with machines](mapping-whale-song/) <br/>
+*What does whale song look like when we transcribe it like sheet music?*
 
-[The niche phenomenon of hyperdiegesis in worldbuilding](hyperdiegesis-worldbuilding/) — *What is the opposite of lukewarm or watered down immersion in fiction or table top gaming settings?*
+[The niche phenomenon of hyperdiegesis in worldbuilding](hyperdiegesis-worldbuilding/) <br/>
+*What is the opposite of lukewarm or watered down immersion in fiction or table top gaming settings?*

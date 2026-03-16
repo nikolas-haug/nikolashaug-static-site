@@ -44,7 +44,7 @@ const PAGE_CONFIGS = {
   },
 
   fiction: {
-    template: 'page',
+    template: 'fiction',
     outputPath: 'fiction/index.html',
     baseUrl: '../',
     sitemapUrl: '/fiction/',

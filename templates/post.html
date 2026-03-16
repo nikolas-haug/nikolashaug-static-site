@@ -5,28 +5,38 @@
     {{> header}}
 
     <main class="site-main">
-        {{#heroImage}}
-        <div class="hero-image">
-            <img src="{{heroImage}}" alt="{{title}}" class="img-100">
-        </div>
-        {{/heroImage}}
-
-        <article class="post-article">
-            <header class="post-header">
-                <h1 class="post-title">{{title}}</h1>
-                {{#postDate}}
-                <time class="post-date" datetime="{{postDate}}">{{postDate}}</time>
-                {{/postDate}}
-            </header>
-
-            <div class="post-content">
-                {{content}}
+        <div class="container">
+            {{#heroImage}}
+            <div class="row">
+                <div class="col-12">
+                    <div class="hero-image">
+                        <img src="{{heroImage}}" alt="{{title}}" class="img-100">
+                    </div>
+                </div>
             </div>
+            {{/heroImage}}
 
-            <footer class="post-footer">
-                <a href="../blog/" class="back-to-blog">&larr; Back to Blog</a>
-            </footer>
-        </article>
+            <div class="row">
+                <div class="col-12">
+                    <article class="post-article">
+                        <header class="post-header">
+                            <h1 class="post-title">{{title}}</h1>
+                            {{#postDate}}
+                            <time class="post-date" datetime="{{postDate}}">{{postDate}}</time>
+                            {{/postDate}}
+                        </header>
+
+                        <div class="post-content">
+                            {{content}}
+                        </div>
+
+                        <footer class="post-footer">
+                            <a href="../blog/" class="back-to-blog">&larr; Back to Blog</a>
+                        </footer>
+                    </article>
+                </div>
+            </div>
+        </div>
     </main>
 
     {{> footer}}

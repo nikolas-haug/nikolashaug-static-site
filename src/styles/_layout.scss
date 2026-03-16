@@ -14,7 +14,7 @@
 
 .site-header {
     position: relative;
-    padding: 1.5rem 1rem;
+    padding: 1.25rem 1rem 1rem;
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0) 100%);
     text-align: center;
     z-index: 2;
@@ -22,7 +22,7 @@
 
 .site-logo-wrapper {
     color: $color-white;
-    font-size: 3rem;
+    font-size: 2.75rem;
     font-family: $font-family-heading;
     letter-spacing: 0.1em;
     line-height: 1;
@@ -45,7 +45,7 @@
 
 .tagline {
     font-family: $font-family-primary;
-    font-size: 1.15rem;
+    font-size: 1.05rem;
     color: $font-color-secondary;
     margin-bottom: 0.5rem;
     text-shadow: 0 2px 12px rgba(20, 40, 80, 0.45), 0 1px 2px rgba(0, 0, 0, 0.25);
@@ -60,12 +60,12 @@
     max-width: 700px;
     margin: 0 auto;
     box-shadow: 0 4px 32px 0 rgba(0, 0, 0, 0.18);
-    padding: 2.5rem 2rem 2rem;
+    padding: 2.25rem 1.5rem 1.75rem;
     position: relative;
     z-index: 1;
 
     @media (max-width: 785px) {
-        padding: 2.5rem 1rem 2rem;
+        padding: 2rem 0.75rem 1.5rem;
     }
 }
 
@@ -90,9 +90,9 @@
     background: $color-bg;
     color: $font-color-secondary;
     text-align: center;
-    padding: 1rem;
+    padding: 1.25rem 1rem 1rem;
     max-width: 700px;
-    margin: 0 auto 4rem;
+    margin: 0 auto 3rem;
     font-size: 0.95rem;
     border-top: 1px solid $color-heading;
     z-index: 1;
@@ -199,11 +199,12 @@
 .row {
     display: flex;
     flex-wrap: wrap;
-    margin-right: -0.5rem;
-    margin-left: -0.5rem;
+    margin-right: -$grid-column-padding;
+    margin-left: -$grid-column-padding;
 }
 
-[class^="col-"] {
+[class^="col-"],
+[class*=" col-"] {
     padding-right: $grid-column-padding;
     padding-left: $grid-column-padding;
 }
@@ -240,5 +241,62 @@
     }
     .col-offset-#{$i} {
         margin-left: math.percentage(math.div($i, $grid-columns));
+    }
+}
+
+@include small-breakpoint {
+    .col-sm {
+        flex-grow: 1;
+        flex-basis: 0;
+        max-width: 100%;
+    }
+
+    @for $i from 1 through $grid-columns {
+        .col-sm-#{$i} {
+            flex-basis: math.percentage(math.div($i, $grid-columns));
+            max-width: math.percentage(math.div($i, $grid-columns));
+        }
+
+        .col-sm-offset-#{$i} {
+            margin-left: math.percentage(math.div($i, $grid-columns));
+        }
+    }
+}
+
+@include medium-breakpoint {
+    .col-med {
+        flex-grow: 1;
+        flex-basis: 0;
+        max-width: 100%;
+    }
+
+    @for $i from 1 through $grid-columns {
+        .col-med-#{$i} {
+            flex-basis: math.percentage(math.div($i, $grid-columns));
+            max-width: math.percentage(math.div($i, $grid-columns));
+        }
+
+        .col-med-offset-#{$i} {
+            margin-left: math.percentage(math.div($i, $grid-columns));
+        }
+    }
+}
+
+@include large-breakpoint {
+    .col-lg {
+        flex-grow: 1;
+        flex-basis: 0;
+        max-width: 100%;
+    }
+
+    @for $i from 1 through $grid-columns {
+        .col-lg-#{$i} {
+            flex-basis: math.percentage(math.div($i, $grid-columns));
+            max-width: math.percentage(math.div($i, $grid-columns));
+        }
+
+        .col-lg-offset-#{$i} {
+            margin-left: math.percentage(math.div($i, $grid-columns));
+        }
     }
 }

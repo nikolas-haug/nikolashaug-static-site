@@ -11,6 +11,7 @@ html {
     font-size: $base-font-size;
     font-family: $font-family-primary;
     color: $font-color-primary;
+    overflow-x: hidden;
 }
 
 body {
@@ -20,6 +21,7 @@ body {
     min-height: 100vh;
     position: relative;
     letter-spacing: $letter-spacing-content;
+    font-weight: 300;
 }
 
 // Fixed gradient overlay — sits above background, below content
@@ -68,6 +70,18 @@ h3 { font-size: $h3-small; }
 h4 { font-size: $h4-small; }
 h5 { font-size: $h5-small; }
 
+h1 {
+    margin: 0 0 1.25rem;
+}
+
+h2 {
+    margin: 2rem 0 1rem;
+}
+
+h3 {
+    margin: 1.5rem 0 0.85rem;
+}
+
 // Desktop heading sizes
 @include small-breakpoint {
     h1 { font-size: $h1-primary; }
@@ -80,7 +94,6 @@ h5 { font-size: $h5-small; }
 // Links
 a {
     color: $color-link;
-    text-decoration: none;
     transition: color 0.2s;
 
     &:hover,

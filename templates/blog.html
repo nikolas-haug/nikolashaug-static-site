@@ -5,15 +5,23 @@
     {{> header}}
 
     <main class="site-main">
-        {{#content}}
-        <div class="page-content blog-intro">
-            {{content}}
-        </div>
-        {{/content}}
+        <div class="container">
+            {{#content}}
+            <div class="row">
+                <div class="col-12 page-content blog-intro">
+                    {{content}}
+                </div>
+            </div>
+            {{/content}}
 
-        <section class="posts-list" aria-label="Blog posts">
-            {{postsList}}
-        </section>
+            <div class="row">
+                <div class="col-12">
+                    <section class="posts-list" aria-label="Blog posts">
+                        {{postsList}}
+                    </section>
+                </div>
+            </div>
+        </div>
     </main>
 
     {{> footer}}

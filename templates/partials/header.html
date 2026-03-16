@@ -1,12 +1,18 @@
 <header class="site-header">
-    {{> nav}}
-    <div class="site-logo-wrapper">
-        <a href="{{baseUrl}}" class="site-title-link">{{siteTitle}}</a>
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                {{> nav}}
+                <div class="site-logo-wrapper">
+                    <a href="{{baseUrl}}" class="site-title-link">{{siteTitle}}</a>
+                </div>
+                <p class="tagline">{{siteTagline}}</p>
+                <button class="hamburger-btn" aria-expanded="false" aria-label="Toggle navigation" aria-controls="main-nav">
+                    <span class="hamburger-bar"></span>
+                    <span class="hamburger-bar"></span>
+                    <span class="hamburger-bar"></span>
+                </button>
+            </div>
+        </div>
     </div>
-    <p class="tagline">{{siteTagline}}</p>
-    <button class="hamburger-btn" aria-expanded="false" aria-label="Toggle navigation" aria-controls="main-nav">
-        <span class="hamburger-bar"></span>
-        <span class="hamburger-bar"></span>
-        <span class="hamburger-bar"></span>
-    </button>
 </header>

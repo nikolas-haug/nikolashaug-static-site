@@ -17,15 +17,15 @@
 .main-nav {
     ul {
         list-style: none;
-        padding: 0 0 1.5rem;
+        padding: 0 0 1rem;
         margin: 0;
         display: flex;
         justify-content: center;
-        gap: 2.5rem;
+        gap: 2rem;
     }
 
     li {
-        font-size: 1.1rem;
+        font-size: 1rem;
         position: relative;
     }
 
@@ -33,6 +33,7 @@
         color: $color-link;
         text-decoration: none;
         transition: color 0.2s;
+        letter-spacing: 0.02em;
 
         &:hover,
         &:focus {
@@ -54,7 +55,7 @@
 
 @media (max-width: 785px) {
     .site-header {
-        padding: 2rem 1rem 1.5rem;
+        padding: 4rem 1rem 1.5rem;
     }
 
     .hamburger-btn {
@@ -64,12 +65,13 @@
         justify-content: center;
         width: 44px;
         height: 44px;
-        margin: 0 auto 0.5rem;
-        background: none;
-        border: none;
+        padding: 0;
+        margin: 0 auto;
+        background: rgba(20, 28, 38, 0.95);
+        border: 2px solid rgba(255, 255, 255, 0.2);
+        border-radius: 8px;
         cursor: pointer;
         z-index: 5;
-        position: relative;
     }
 
     .hamburger-bar {
@@ -77,7 +79,7 @@
         width: 28px;
         height: 3px;
         margin: 3px 0;
-        background: $color-text;
+        background: $color-white;
         border-radius: 2px;
         transition: all 0.3s cubic-bezier(0.4, 2, 0.6, 1);
     }
@@ -184,10 +186,6 @@
     display: block;
 }
 
-.post-card__content {
-    // no extra padding needed
-}
-
 .post-card__title {
     font-family: $font-family-heading;
     color: $color-heading;
@@ -218,10 +216,6 @@
 // =====================================================
 // INDIVIDUAL POST PAGE
 // =====================================================
-
-.post-article {
-    // inherits .site-main padding
-}
 
 .post-header {
     margin-bottom: 1.5rem;
@@ -275,7 +269,6 @@
 // =====================================================
 
 %buttons {
-    -webkit-appearance: none;
     display: inline-block;
     border: $button-border-width $button-border-style $button-border-color;
     border-radius: $button-border-radius;
@@ -285,8 +278,8 @@
     font-family: $button-font-family;
     font-size: $button-font-size;
     text-transform: $button-text-transform;
-    padding: 1rem 1.5rem;
-    margin: 0 0 1.5rem 0;
+    padding: 0.85rem 1.25rem;
+    margin: 0 0 1rem 0;
     vertical-align: middle;
     text-align: center;
     cursor: pointer;
