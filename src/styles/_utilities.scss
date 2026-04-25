@@ -8,7 +8,7 @@
 @use "mixins" as *;
 
 // Clearfix
-.clearfix {
+.clearfix::after {
     content: "";
     display: table;
     clear: both;
@@ -104,23 +104,6 @@
 
 .margin-complete {
     margin: $margin-utility;
-}
-
-// Paddings
-.padding-top-auto {
-    padding-top: auto;
-}
-
-.padding-bottom-auto {
-    padding-bottom: auto;
-}
-
-.padding-left-auto {
-    padding-left: auto;
-}
-
-.padding-right-auto {
-    padding-right: auto;
 }
 
 .padding-top-zero {

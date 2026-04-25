@@ -17,6 +17,11 @@ $large: 1200px;
 
 $container-gutter: 0.95;
 
+// =====================================================
+// BREAKPOINTS
+// =====================================================
+$mobile-breakpoint: 785px;
+
 //=====================================================
 // GRID
 //=====================================================
@@ -37,14 +42,10 @@ $font-family-heading:  'New Rocker', serif;
 $font-family-serif:    'Philosopher', serif;
 $font-family-mono:     'Space Mono', monospace;
 
-$font-color-primary:   #e0e6ed;
-$font-color-secondary: #bfc9d1;
 $font-size-primary:    1rem;
 
 // Headings
-$heading-font-family-primary: 'New Rocker', serif;
-$heading-font-color-primary:  #b3d1ff;
-$heading-font-weight:         400;
+$heading-font-weight:  400;
 $heading-line-height:         1.2;
 
 // Small headings (mobile)
@@ -61,10 +62,8 @@ $h3-primary: 1.5rem;
 $h4-primary: 1.5rem;
 $h5-primary: 1.3rem;
 
-$typography-margins:      1.2rem;
-$blockquote-font-size:    1.05rem;
-$blockquote-border-color: #b3d1ff;
-$blockquote-background-color: transparent;
+$typography-margins:   2rem;
+$blockquote-font-size: 1.05rem;
 
 $letter-spacing-content: 0.1px;
 $letter-spacing-heading: 1px;
@@ -73,7 +72,6 @@ $letter-spacing-heading: 1px;
 // COLOR
 //=====================================================
 
-$global-background-color: #232b3a;
 $color-bg:          #232b3a;
 $color-deep:        #0a1838;
 $color-text:        #e0e6ed;
@@ -100,9 +98,8 @@ $padding-utility: 1rem;
 
 $border-width:  1px;
 $border-style:  solid;
-$border-color:  #2e3a4d;
 $border-radius: 6px;
-$borders:       $border-width $border-style $border-color;
+$borders:       $border-width $border-style $color-border;
 
 //=====================================================
 // NAVIGATION
@@ -135,7 +132,7 @@ $form-border-focus: 1px solid $color-link;
 $button-background-color: $color-accent;
 $button-background-hover: $color-accent-hover;
 $button-color:            #fff;
-$button-font-weight:      400;
+$button-font-weight:      600;
 $button-font-family:      $font-family-primary;
 $button-font-size:        1rem;
 $button-border-width:     1px;
@@ -143,6 +140,7 @@ $button-border-style:     solid;
 $button-border-color:     $color-accent;
 $button-border-radius:    $border-radius;
 $button-text-transform:   none;
+$button-letter-spacing:   0.02em;
 
 $accent-button-background-color: $color-link;
 $accent-button-color:            #fff;

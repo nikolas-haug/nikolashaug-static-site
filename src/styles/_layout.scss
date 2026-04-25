@@ -14,7 +14,7 @@
 
 .site-header {
     position: relative;
-    padding: 1.25rem 1rem 1rem;
+    padding: 2rem 1rem 1.5rem 1rem;
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0) 100%);
     text-align: center;
     z-index: 2;
@@ -28,6 +28,10 @@
     line-height: 1;
     margin-bottom: 0.5rem;
     text-shadow: 0 2px 12px rgba(20, 40, 80, 0.45), 0 1px 2px rgba(0, 0, 0, 0.25);
+
+    @media (max-width: 600px) {
+        font-size: 2.25rem;
+    }
 }
 
 .site-title-link {
@@ -46,8 +50,8 @@
 .tagline {
     font-family: $font-family-primary;
     font-size: 1.05rem;
-    color: $font-color-secondary;
-    margin-bottom: 0.5rem;
+    color: $color-text-muted;
+    margin-bottom: 1.5rem;
     text-shadow: 0 2px 12px rgba(20, 40, 80, 0.45), 0 1px 2px rgba(0, 0, 0, 0.25);
 }
 
@@ -64,7 +68,7 @@
     position: relative;
     z-index: 1;
 
-    @media (max-width: 785px) {
+    @media (max-width: $mobile-breakpoint) {
         padding: 2rem 0 1.5rem;
     }
 }
@@ -88,7 +92,7 @@
 .site-footer {
     position: relative;
     background: $color-bg;
-    color: $font-color-secondary;
+    color: $color-text-muted;
     text-align: center;
     padding: 1.25rem 1rem 1rem;
     max-width: 700px;
@@ -101,7 +105,7 @@
         margin: 0;
     }
 
-    @media (max-width: 785px) {
+    @media (max-width: $mobile-breakpoint) {
         margin-bottom: 0;
     }
 }

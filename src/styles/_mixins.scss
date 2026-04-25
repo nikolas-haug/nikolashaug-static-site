@@ -40,4 +40,9 @@
     padding-left: $container-padding;
     margin-right: auto;
     margin-left: auto;
+
+    @media (max-width: $mobile-breakpoint) {
+        padding-right: 1rem;
+        padding-left: 1rem;
+    }
 }

@@ -10,13 +10,13 @@
 html {
     font-size: $base-font-size;
     font-family: $font-family-primary;
-    color: $font-color-primary;
+    color: $color-text;
     overflow-x: hidden;
 }
 
 body {
     line-height: $base-line-height;
-    background-color: $global-background-color;
+    background-color: $color-bg;
     font-size: $font-size-primary;
     min-height: 100vh;
     position: relative;
@@ -54,14 +54,14 @@ table {
 h1, h2, h3, h4, h5, h6 {
     margin: $typography-margins 0;
     font-weight: $heading-font-weight;
-    font-family: $heading-font-family-primary;
+    font-family: $font-family-heading;
     line-height: $heading-line-height;
     letter-spacing: $letter-spacing-heading;
-    color: $heading-font-color-primary;
+    color: $color-heading;
 
     a:link,
     a:visited {
-        color: $heading-font-color-primary;
+        color: $color-heading;
     }
 }
 
@@ -108,13 +108,12 @@ a {
 
 // Blockquotes use Philosopher serif
 blockquote {
-    background: $blockquote-background-color;
     margin: 0 0 $typography-margins 0;
-    border-left: 4px solid $blockquote-border-color;
+    border-left: 4px solid $color-heading;
     padding: 0.75rem 1.5rem;
     font-size: $blockquote-font-size;
     font-family: $font-family-serif;
-    color: $font-color-secondary;
+    color: $color-text-muted;
 
     cite {
         display: block;
@@ -139,6 +138,7 @@ figure {
 
     figcaption {
         font-size: 0.85rem;
+        font-family: $font-family-serif;
         color: $color-text-muted;
         text-align: center;
         margin-top: 0.5rem;
