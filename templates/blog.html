@@ -7,20 +7,14 @@
     <main class="site-main">
         <div class="container">
             {{#content}}
-            <div class="row">
-                <div class="col-12 page-content blog-intro">
-                    {{content}}
-                </div>
+            <div class="page-content blog-intro">
+                {{content}}
             </div>
             {{/content}}
 
-            <div class="row">
-                <div class="col-12">
-                    <section class="posts-list" aria-label="Blog posts">
-                        {{postsList}}
-                    </section>
-                </div>
-            </div>
+            <section class="posts-list" aria-label="Blog posts">
+                {{postsList}}
+            </section>
         </div>
     </main>
 

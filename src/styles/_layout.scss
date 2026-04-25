@@ -60,12 +60,12 @@
     max-width: 700px;
     margin: 0 auto;
     box-shadow: 0 4px 32px 0 rgba(0, 0, 0, 0.18);
-    padding: 2.25rem 1.5rem 1.75rem;
+    padding: 2.25rem 0 1.75rem;
     position: relative;
     z-index: 1;
 
     @media (max-width: 785px) {
-        padding: 2rem 0.75rem 1.5rem;
+        padding: 2rem 0 1.5rem;
     }
 }
 
@@ -137,7 +137,7 @@
 }
 
 // =====================================================
-// GRID CONTAINERS (from bathtubcig)
+// GRID CONTAINERS
 // =====================================================
 
 .container {
@@ -171,24 +171,6 @@
     @include container-styles
 }
 
-@include x-small-breakpoint {
-    .container {
-        @include container-size($x-small, $container-gutter);
-    }
-}
-
-@include small-breakpoint {
-    .container {
-        @include container-size($small, $container-gutter);
-    }
-}
-
-@include medium-breakpoint {
-    .container {
-        @include container-size($medium, $container-gutter);
-    }
-}
-
 @include large-breakpoint {
     .container {
         @include container-size($large, $container-gutter);
@@ -199,25 +181,7 @@
 .row {
     display: flex;
     flex-wrap: wrap;
-    margin-right: -$grid-column-padding;
-    margin-left: -$grid-column-padding;
-}
-
-[class^="col-"],
-[class*=" col-"] {
-    padding-right: $grid-column-padding;
-    padding-left: $grid-column-padding;
-}
-
-.no-gutters {
-    margin-right: 0;
-    margin-left: 0;
-}
-
-.no-gutters > .col,
-.no-gutters > [class*="col-"] {
-    padding-right: 0;
-    padding-left: 0;
+    gap: $grid-gap;
 }
 
 .col-auto {
@@ -230,14 +194,15 @@
     flex-grow: 1;
     flex-basis: auto;
     max-width: 100%;
-    padding-right: $grid-column-padding;
-    padding-left: $grid-column-padding;
 }
 
+// Column widths use calc() to account for gap between columns.
+// Formula: (100% / total-cols * span) - gap * (total-cols - span) / total-cols
+// Simplified via flex-basis so gap is shared proportionally across columns.
 @for $i from 1 through $grid-columns {
     .col-#{$i} {
-        flex-basis: math.percentage(math.div($i, $grid-columns));
-        max-width: math.percentage(math.div($i, $grid-columns));
+        flex-basis: calc(#{math.percentage(math.div($i, $grid-columns))} - #{$grid-gap} * #{math.div($grid-columns - $i, $grid-columns)});
+        max-width: calc(#{math.percentage(math.div($i, $grid-columns))} - #{$grid-gap} * #{math.div($grid-columns - $i, $grid-columns)});
     }
     .col-offset-#{$i} {
         margin-left: math.percentage(math.div($i, $grid-columns));
@@ -253,8 +218,8 @@
 
     @for $i from 1 through $grid-columns {
         .col-sm-#{$i} {
-            flex-basis: math.percentage(math.div($i, $grid-columns));
-            max-width: math.percentage(math.div($i, $grid-columns));
+            flex-basis: calc(#{math.percentage(math.div($i, $grid-columns))} - #{$grid-gap} * #{math.div($grid-columns - $i, $grid-columns)});
+            max-width: calc(#{math.percentage(math.div($i, $grid-columns))} - #{$grid-gap} * #{math.div($grid-columns - $i, $grid-columns)});
         }
 
         .col-sm-offset-#{$i} {
@@ -272,8 +237,8 @@
 
     @for $i from 1 through $grid-columns {
         .col-med-#{$i} {
-            flex-basis: math.percentage(math.div($i, $grid-columns));
-            max-width: math.percentage(math.div($i, $grid-columns));
+            flex-basis: calc(#{math.percentage(math.div($i, $grid-columns))} - #{$grid-gap} * #{math.div($grid-columns - $i, $grid-columns)});
+            max-width: calc(#{math.percentage(math.div($i, $grid-columns))} - #{$grid-gap} * #{math.div($grid-columns - $i, $grid-columns)});
         }
 
         .col-med-offset-#{$i} {
@@ -291,8 +256,8 @@
 
     @for $i from 1 through $grid-columns {
         .col-lg-#{$i} {
-            flex-basis: math.percentage(math.div($i, $grid-columns));
-            max-width: math.percentage(math.div($i, $grid-columns));
+            flex-basis: calc(#{math.percentage(math.div($i, $grid-columns))} - #{$grid-gap} * #{math.div($grid-columns - $i, $grid-columns)});
+            max-width: calc(#{math.percentage(math.div($i, $grid-columns))} - #{$grid-gap} * #{math.div($grid-columns - $i, $grid-columns)});
         }
 
         .col-lg-offset-#{$i} {

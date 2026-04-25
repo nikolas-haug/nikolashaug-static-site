@@ -12,8 +12,6 @@
 // =====================================================
 
 .page-content {
-    line-height: $base-line-height;
-    font-size: 1.02rem;
 
     > h1:first-child,
     > h2:first-child {
@@ -52,17 +50,7 @@ body.home {
 // =====================================================
 
 .fiction-intro {
-    align-items: flex-start;
     margin-bottom: 1.75rem;
-}
-
-.fiction-intro__media {
-    display: flex;
-    justify-content: center;
-
-    @include medium-breakpoint {
-        justify-content: flex-end;
-    }
 }
 
 // =====================================================
@@ -81,6 +69,7 @@ body.home {
     display: flex;
     align-items: center;
     justify-content: center;
+    margin: 0 auto;
 
     img {
         width: 100%;
@@ -90,10 +79,6 @@ body.home {
         border-radius: 8px;
         display: block;
         z-index: 1;
-    }
-
-    @media (max-width: 992px) {
-        margin: 1rem auto 0;
     }
 }
 

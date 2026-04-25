@@ -21,7 +21,9 @@ body {
     min-height: 100vh;
     position: relative;
     letter-spacing: $letter-spacing-content;
-    font-weight: 300;
+    font-weight: 400;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 // Fixed gradient overlay — sits above background, below content

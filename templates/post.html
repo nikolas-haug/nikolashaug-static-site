@@ -7,35 +7,27 @@
     <main class="site-main">
         <div class="container">
             {{#heroImage}}
-            <div class="row">
-                <div class="col-12">
-                    <div class="hero-image">
-                        <img src="{{heroImage}}" alt="{{title}}" class="img-100">
-                    </div>
-                </div>
+            <div class="hero-image">
+                <img src="{{heroImage}}" alt="{{title}}" class="img-100">
             </div>
             {{/heroImage}}
 
-            <div class="row">
-                <div class="col-12">
-                    <article class="post-article">
-                        <header class="post-header">
-                            <h1 class="post-title">{{title}}</h1>
-                            {{#postDate}}
-                            <time class="post-date" datetime="{{postDate}}">{{postDate}}</time>
-                            {{/postDate}}
-                        </header>
+            <article class="post-article">
+                <header class="post-header">
+                    <h1 class="post-title">{{title}}</h1>
+                    {{#postDate}}
+                    <time class="post-date" datetime="{{postDate}}">{{postDate}}</time>
+                    {{/postDate}}
+                </header>
 
-                        <div class="post-content">
-                            {{content}}
-                        </div>
-
-                        <footer class="post-footer">
-                            <a href="../blog/" class="back-to-blog">&larr; Back to Blog</a>
-                        </footer>
-                    </article>
+                <div class="post-content">
+                    {{content}}
                 </div>
-            </div>
+
+                <footer class="post-footer">
+                    <a href="../blog/" class="back-to-blog">&larr; Back to Blog</a>
+                </footer>
+            </article>
         </div>
     </main>
 

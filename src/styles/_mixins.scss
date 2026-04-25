@@ -36,8 +36,8 @@
 
 @mixin container-styles {
     width: 100%;
-    padding-right: .5rem;
-    padding-left: .5rem; 
+    padding-right: $container-padding;
+    padding-left: $container-padding;
     margin-right: auto;
     margin-left: auto;
 }

@@ -22,8 +22,8 @@ $container-gutter: 0.95;
 //=====================================================
 
 $grid-columns: 12;
-$grid-column-padding: 1.5rem;
-$row-gallery-height: 30rem;
+$grid-gap: 1rem;
+$container-padding: 2rem;
 
 //=====================================================
 // TYPOGRAPHY
@@ -48,11 +48,11 @@ $heading-font-weight:         400;
 $heading-line-height:         1.2;
 
 // Small headings (mobile)
-$h1-small: 1.75rem;
-$h2-small: 1.5rem;  
-$h3-small: 1.25rem;
-$h4-small: 1.1rem;
-$h5-small: 0.9rem;
+$h1-small: 2rem;
+$h2-small: 1.75rem;
+$h3-small: 1.4rem;
+$h4-small: 1.2rem;
+$h5-small: 1rem;
 
 // Primary headings (desktop)
 $h1-primary: 2rem;

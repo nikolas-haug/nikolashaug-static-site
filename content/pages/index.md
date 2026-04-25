@@ -10,7 +10,7 @@ schemaType: Person
 
 # Welcome to my digital landscape.
 
-<p class="text-center">Explore my work here or get a copy of my short story The Singing Rock by clicking the link below.</p>
+<p class="text-center">Explore my work here or get a copy of my short story <i>The Singing Rock</i> by clicking the link below.</p>
 
 <div class="text-center"><button class="ml-onclick-form" onclick="ml('show', 'vMP8qa', true)">Get my short story</button></div>
 
