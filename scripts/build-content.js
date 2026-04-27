@@ -44,7 +44,7 @@ const PAGE_CONFIGS = {
   },
 
   fiction: {
-    template: 'fiction',
+    template: 'page',
     outputPath: 'fiction/index.html',
     baseUrl: '../',
     sitemapUrl: '/fiction/',
@@ -62,7 +62,7 @@ const PAGE_CONFIGS = {
   },
 
   contact: {
-    template: 'contact',
+    template: 'page',
     outputPath: 'contact/index.html',
     baseUrl: '../',
     sitemapUrl: '/contact/',
@@ -209,9 +209,20 @@ function generateHTML(template, data) {
 }
 
 // Format date for display
+// front-matter parses bare YAML dates as UTC-midnight Date objects,
+// so we read UTC parts to recover the intended calendar date before
+// converting to local time for display.
 function formatDate(dateString) {
   if (!dateString) return '';
-  const date = new Date(dateString);
+  let year, month, day;
+  if (dateString instanceof Date) {
+    year  = dateString.getUTCFullYear();
+    month = dateString.getUTCMonth() + 1;
+    day   = dateString.getUTCDate();
+  } else {
+    [year, month, day] = String(dateString).split('-').map(Number);
+  }
+  const date = new Date(year, month - 1, day);
   return date.toLocaleDateString('en-US', {
     year: 'numeric',
     month: 'long',
@@ -413,6 +424,7 @@ function buildBlogListing(posts, siteData, generateNavHTML, generateFooterNavHTM
     title: blogPage.frontmatter.title,
     content: blogPage.content,
     postsList,
+    showPostsList: blogPage.frontmatter.showPostsList !== false,
     heroImage: blogPage.frontmatter.heroImage
       ? `${baseUrl}${blogPage.frontmatter.heroImage.replace(/^\//, '')}`
       : '',

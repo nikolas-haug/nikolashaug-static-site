@@ -8,28 +8,6 @@
 @use "mixins" as *;
 
 // =====================================================
-// PAGE CONTENT (markdown body)
-// =====================================================
-
-.page-content {
-
-    > h1:first-child,
-    > h2:first-child {
-        margin-top: 0;
-    }
-
-    img {
-        margin: 1rem 0;
-    }
-}
-
-.blog-intro {
-    margin-bottom: 1.75rem;
-    padding-bottom: 1rem;
-    border-bottom: 1px solid $color-border;
-}
-
-// =====================================================
 // Custom page styles
 // =====================================================
 

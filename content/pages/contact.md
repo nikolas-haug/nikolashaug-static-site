@@ -1,6 +1,6 @@
 ---
 title: Contact
-layout: contact
+layout: page
 permalink: /contact/
 metaTitle: Contact | Nikolas Haug
 metaDescription: Get in touch with Nikolas Haug or sign up for his monthly newsletter about speculative fiction, writing craft, and worldbuilding.
