@@ -120,6 +120,10 @@ blockquote {
         margin-top: $typography-margins;
         font-size: 0.9rem;
     }
+
+    p {
+        margin: 0;
+    }
 }
 
 // Images

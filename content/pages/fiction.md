@@ -18,22 +18,15 @@ schemaType: Person
         <button class="ml-onclick-form" onclick="ml('show', 'vMP8qa', true)">Get my short story</button>
     </div>
     <div class="col-12 col-sm-6">
-        <div class="custom-image-wrapper">
+        <div class="book-thumbnail">
             <img src="{{baseUrl}}images/the-singing-rock.jpg" alt="The Singing Rock — a short story by Nikolas Haug">
-            <div class="custom-image-overlay"></div>
         </div>
     </div>
 </div>
 
 Look for future links to new short fiction on this page, some of it published directly on this website. I write a lot of short stories, and I try to publish some of them in various places online or in the real world. I share most of my latest work with readers in my newsletter.
 
-## Strange technology inspired by my fiction
-
-Alongside my fiction and other writing I also write code, and beyond the demands of my day job, I like to experiment with strange ideas inspired by ideas in my stories and make them come alive in the web browser or other digital spaces. One recent example would be this prototype model from one of my stories of a machine used to talk to whales. I call it the BEALE (bathymetric echo audio listening encoder) and you can test it by clicking the link below. Come with your own whale songs in MP3 or WAV format, or try the existing catalog on the page.
-
-<div class="text-center"><a href="https://beale.nikolashaug.com" class="button" target="_blank" rel="noopener">Test prototype</a></div>
-
-## Some craft related items
+## Writing Tools
 
 I collect ideas about writing craft and process in my newsletter, but have distilled some of those thoughts into blog posts that can be read here.
 

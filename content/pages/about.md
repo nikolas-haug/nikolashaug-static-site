@@ -11,12 +11,4 @@ schemaType: Person
 
 # About
 
-I'm Nikolas, a writer of fiction and creator in other spheres. I write stories about strange worlds with characters inspired from this one. Most of my stories fall into the sci-fi fantasy or speculative realm.
-
-![Nikolas Haug](images/nikolas-haug-portrait.png)
-
-I'm currently working on a novel about whales — specifically about a protagonist who becomes obsessed with communicating with humpback whales using advanced DIY technology. It's a story about obsession, translation, and what it means to truly understand another mind.
-
-My newsletter is where I think out loud about writing, worldbuilding, speculative fiction, and the creative process. I also occasionally go deep on tabletop gaming and hyperdiegesis. [Sign up here](contact/).
-
-*[Add more about yourself here.]*
+Hi I’m Nikolas, a writer of fiction and creator in other spheres. I’ve always been making things and thought it was a good time to put some of it on the internet to share with you. I enjoy writing fantastical stories about new and strange worlds filled with characters inspired by this one. I’m also hard at work on a novel that involves a protagonist preoccupied with conundrum of whale song. You can find glimpses and other extracts of my work <a href="/fiction/">here</a> and <a href="/blog/">here</a>.

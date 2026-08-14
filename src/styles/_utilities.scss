@@ -201,3 +201,37 @@
 .font-style-italic {
     font-style: italic;
 }
+
+// Post image sizing
+// Usage in Markdown: wrap your image in a div with the desired class
+//   <div class="img-sm">![alt](url)</div>
+//   <div class="img-md">![alt](url)</div>
+//   <div class="img-full">![alt](url)</div>
+.img-sm,
+.img-md,
+.img-full {
+    margin: $typography-margins auto;
+
+    img {
+        display: block;
+        height: auto;
+    }
+}
+
+.img-sm {
+    max-width: 320px;
+
+    img { width: 100%; }
+}
+
+.img-md {
+    max-width: 560px;
+
+    img { width: 100%; }
+}
+
+.img-full {
+    max-width: 100%;
+
+    img { width: 100%; }
+}

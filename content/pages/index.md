@@ -2,9 +2,13 @@
 title: Home
 layout: page
 permalink: /
+heroImage: ''
 metaTitle: Nikolas Haug | Writer & Creator
 metaDescription: Nikolas Haug is a writer of speculative fiction and sci-fi fantasy. Explore his work, read his blog, and sign up for his monthly newsletter.
 metaKeywords: Nikolas Haug, speculative fiction, sci-fi fantasy, writer, author, short stories, newsletter, worldbuilding
+ogTitle: ''
+ogDescription: ''
+ogImage: ''
 schemaType: Person
 ---
 
@@ -14,11 +18,12 @@ schemaType: Person
 
 <div class="text-center"><button class="ml-onclick-form" onclick="ml('show', 'vMP8qa', true)">Get my short story</button></div>
 
-I write a monthly newsletter (sometimes more frequently) that collects and collates my ideas about writing and other creative projects. The content often includes speculative fiction and sci-fi fantasy stories, ideas about writing craft and creative process, and even deep dives into worldbuilding and table top gaming. If you enjoy these things, please sign up or read samplings from past entries below.
+I write a bi-monthly newsletter in which I talk about writing and post updates about my creative projects. From time to time, I'll include one of my short stories before I share it anywhere else in the world. I also talk a lot about worldbuilding and how I go about it in my fiction and the table top games I play with my friends. If you want to see more of those things, please sign up or read samplings from past letters below: 
+
 
 <div class="text-center"><a href="blog" class="button">More from my newsletter</a></div>
 
-I'm currently hard at work trying to finish a novel about whales and a protagonist who tries to talk to them using advanced DIY technology. Look for notes and updates about that on the pages here, or sign up for my newsletter to get more detailed glimpses behind the curtain.
+I'm currently hard at work on a novel about whales and a protagonist who tries to talk to them using a bathymetric listening machine he built himself. Look for notes and updates about that on the pages here, or sign up for my newsletter to get more detailed glimpses behind the curtain.
 
 ![Humpback whale breaching in the pacific ocean](images/whale-breach.png "A humpback whale breaches off the Pacific coast.")
 
@@ -29,7 +34,7 @@ If you don't know me already, let me introduce myself. I'm Nikolas, a writer of 
 For a small sampling of my newsletter/blog content, here are two links to previous posts:
 
 [Mapping whale song with machines](mapping-whale-song/) <br/>
-*What does whale song look like when we transcribe it like sheet music?*
+_What does whale song look like when we transcribe it like sheet music?_
 
 [The niche phenomenon of hyperdiegesis in worldbuilding](hyperdiegesis-worldbuilding/) <br/>
-*What is the opposite of lukewarm or watered down immersion in fiction or table top gaming settings?*
+_What is the opposite of lukewarm or watered down immersion in fiction or table top gaming settings?_
