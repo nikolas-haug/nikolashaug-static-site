@@ -36,5 +36,5 @@ For a small sampling of my newsletter/blog content, here are two links to previo
 [Mapping whale song with machines](mapping-whale-song/) <br/>
 _What does whale song look like when we transcribe it like sheet music?_
 
-[The niche phenomenon of hyperdiegesis in worldbuilding](hyperdiegesis-worldbuilding/) <br/>
+[The niche phenomenon of hyperdiegesis in worldbuilding](how-much-world-in-your-world/) <br/>
 _What is the opposite of lukewarm or watered down immersion in fiction or table top gaming settings?_
