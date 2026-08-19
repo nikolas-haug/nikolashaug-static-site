@@ -11,7 +11,7 @@ schemaType: Person
 
 # About
 
-Hi I’m Nikolas, a writer of fiction and creator in other spheres. I’ve always been making things and thought it was a good time to put some of it on the internet to share with you. I enjoy writing fantastical stories about new and strange worlds filled with characters inspired by this one. I’m also hard at work on a novel that involves a protagonist preoccupied with conundrum of whale song. You can find glimpses and other extracts of my work <a href="/fiction/">here</a> and <a href="/blog/">here</a>.
+Hi I’m Nikolas, a writer of fiction and creator in other spheres. I’ve always been making things and thought it was a good time to put some of it on the internet to share with you. I enjoy writing fantastical stories about new and strange worlds filled with characters inspired by this one. I’m also hard at work on a novel that involves a protagonist preoccupied with conundrum of whale song. You can find glimpses and other extracts of my work <a href="{{baseUrl}}/fiction/">here</a> and <a href="{{baseUrl}}/blog/">here</a>.
 
 <div class="img-sm">
 
