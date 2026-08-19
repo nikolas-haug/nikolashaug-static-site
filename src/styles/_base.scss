@@ -50,6 +50,10 @@ table {
     letter-spacing: $letter-spacing-content;
 }
 
+ul {
+    padding: 0 0 0 1.5rem;
+}
+
 // Headings use New Rocker serif
 h1, h2, h3, h4, h5, h6 {
     margin: $typography-margins 0;

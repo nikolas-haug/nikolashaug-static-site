@@ -12,8 +12,10 @@ schemaType: Person
 
 The best way to stay in touch is to subscribe to my newsletter. I send it monthly (sometimes more frequently) with writing updates, essays, and occasional fiction.
 
-<!-- Paste your MailerLite newsletter embed code here -->
+<p class="">Email:&nbsp;<a href="mailto:nikolas@nikolashaug.com">nikolas@nikolashaug.com</a></p>
 
----
+<p class="">Social: <a href="https://www.instagram.com/nikolashaug_writer/ " target="_blank">https://www.instagram.com/nikolashaug_writer/ </a></p>
 
-You can also reach me directly at [your@email.com](mailto:your@email.com).
+Additionally, you can also sign up for my newsletter to receive periodic updates and other free content directly from me. You can respond to any email you receive. I read every reply.
+
+<div class="ml-embedded" data-form="Jxk2ys"></div>

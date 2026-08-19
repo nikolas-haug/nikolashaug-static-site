@@ -28,10 +28,8 @@ Look for future links to new short fiction on this page, some of it published di
 
 ## Writing Tools
 
-I collect ideas about writing craft and process in my newsletter, but have distilled some of those thoughts into blog posts that can be read here.
+I collect ideas about writing craft and process in my newsletter, but have distilled some of those thoughts into blog posts that can be read <a href="/blog">here</a>.
 
-I also like to make things to help myself and other writers better organize their ideas when drafting or revising their stories. One example: I created a short template for developing characters through their actions, one that compiles the ideas of famed SFF author, Samuel R. Delany, and his ideas/discussion in his book ***About Writing*** (2005 Wesleyan University Press). The template focuses on how to make characters in your stories more real by focusing on how they act. You can download the template below.
-
-<div class="text-center"><a href="{{baseUrl}}assets/character-template.pdf" class="button" download>Download character template</a></div>
-
-I try to keep this page up to date, so look for more stuff like this, and more links to my writing, here in the future.
+### Good books on writing
+- Wonderbook
+- Self-editing for fiction writers
