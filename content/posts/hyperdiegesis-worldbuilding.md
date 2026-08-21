@@ -3,7 +3,7 @@ title: How Much World in Your World
 date: 2025-03-04
 slug: how-much-world-in-your-world
 excerpt: TBD
-metaTitle: TBD
+metaTitle: How Much World in Your World | Nikolas Haug
 metaDescription: TBD
 metaKeywords: TBD
 ogType: article

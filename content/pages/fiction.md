@@ -25,11 +25,3 @@ schemaType: Person
 </div>
 
 Look for future links to new short fiction on this page, some of it published directly on this website. I write a lot of short stories, and I try to publish some of them in various places online or in the real world. I share most of my latest work with readers in my newsletter.
-
-## Writing Tools
-
-I collect ideas about writing craft and process in my newsletter, but have distilled some of those thoughts into blog posts that can be read <a href="/blog">here</a>.
-
-### Good books on writing
-- Wonderbook
-- Self-editing for fiction writers
